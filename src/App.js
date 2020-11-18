@@ -10,6 +10,11 @@ class App extends Component{
     }
   }
 
+handleGamePlay = (index) => {
+  alert(index)
+}
+
+
   render(){
     return(
       <React.Fragment>
@@ -20,6 +25,8 @@ class App extends Component{
             <Sqaure 
               value = { value }
               key = { index }
+              index = { index }
+              handleGamePlay = {this.handleGamePlay}
             />
             )
          })
